@@ -6,9 +6,10 @@ function Multiplication() {
         for (var j = i; j <= 9; j++) {
             // self.questions.push({n1: i, n2: j});
             var n1, n2;
-            n1 = _randomPendingZero(i);
-            n2 = _randomPendingZero(j);
-            questions.push([n1, n2, n1 * n2]);
+            var multiplication = 100 * i * j;
+            n1 = _randomPendingZero() * i;
+            n2 = multiplication / n1;
+            questions.push([n1, n2, multiplication]);
         }
 
     function _suffle(array) {
@@ -31,9 +32,9 @@ function Multiplication() {
     }
     ;
 
-    function _randomPendingZero(n) {
+    function _randomPendingZero() {
         // get random number from 0 to 2
-        return n * Math.pow(10, Math.round(Math.random() * 2));
+        return Math.pow(10, Math.round(Math.random() * 2));
     }
 
     self.multiplications = ko.observableArray(_suffle(questions.slice()));
