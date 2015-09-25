@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Multiplication</title>
+        <script type="text/javascript" src="js/knockout-3.3.0.js"></script>
+
+        <link rel="stylesheet" href="css/multiplication.css">
+    </head>
+    <body>
+
+        <div class="multiplication">
+            <ul data-bind="foreach: multiplications">
+                <li><!--ko text: $data[0] --><!--/ko--> <span>x</span> <!--ko text: $data[1] --><!--/ko--> = ____</li>
+            </ul>
+        </div>
+        <hr>
+        <div class="multiplication">
+            <ul data-bind="foreach: divisions">
+                <li><!--ko text: $data[2] --><!--/ko--> <span>÷</span> <!--ko text: $data[1] --><!--/ko--> = ____</li>
+            </ul>
+        </div>
+
+        <script type="text/javascript" src="js/multiplication.js"></script>
+    </body>
+</html>

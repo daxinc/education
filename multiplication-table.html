@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="algorithm">
+<head>
+<meta charset="UTF-8">
+<title>Multiplication Table</title>
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/algorithm.js"></script>
+<link rel="stylesheet" href="css/algorithm.css">
+</head>
+<body class="multiplication" ng-controller="AlgorithmController as algorithmCtrl">
+
+	<div ng-repeat="row in multiplicationTable">
+		<ul>
+			<li ng-repeat="cell in row">{{cell[0] | paddingSpace}}<span>x</span>{{cell[1] | paddingSpace}}={{cell[0] * cell[1]|paddingSpace:3}}
+			</li>
+		</ul>
+	</div>
+
+</body>
+</html>

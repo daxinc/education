@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="algorithm">
+<head>
+<meta charset="UTF-8">
+<title>Addition and Subtraction</title>
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/algorithm.js"></script>
+<link rel="stylesheet" href="css/algorithm.css">
+</head>
+<body class="algorithm" ng-controller="AlgorithmController as algorithmCtrl">
+
+<ul>
+
+<li ng-repeat="ad in additions">{{ad[0] | paddingSpace}} + {{ad[1] | paddingSpace}} + {{ad[2] | paddingSpace}} = _____</li>
+<li ng-repeat="su in subtractions">{{su[0] | paddingSpace}} - {{su[1] | paddingSpace}} - {{su[2] | paddingSpace}} = _____</li>
+
+</ul>
+
+
+</body>
+</html>

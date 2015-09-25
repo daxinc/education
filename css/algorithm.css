@@ -1,0 +1,43 @@
+.algorithm {
+    margin: 5px;
+}
+
+.algorithm ul {
+    margin: 0;
+    list-style-type: none;
+}
+
+.algorithm ul li {
+    padding: 10px;
+    /* border: 1px solid grey; */
+    float: left;
+    font-family: "Courier New";
+    font-size: 16pt;
+    width: 300px;
+}
+
+.multiplication {
+    margin: 0;
+}
+
+.multiplication div {
+    clear: both;
+}
+.multiplication ul {
+    margin: 0;
+    list-style-type: none;
+}
+
+.multiplication ul li {
+    margin: 0;
+    padding: 5px;
+    /* border: 1px solid grey; */
+    float: left;
+    font-family: "Courier New";
+    font-size: 9pt;
+    width: 70px;
+}
+
+.multiplication ul li span {
+    font-family: Arial;
+}
